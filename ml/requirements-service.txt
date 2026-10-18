@@ -1,0 +1,3 @@
+# Current three-model service; requirements.txt also supports the legacy adapter.
+-r requirements.txt
+ultralytics-opencv-headless>=8.4,<9

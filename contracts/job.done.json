@@ -1,0 +1,40 @@
+{
+  "job_id": "example-only",
+  "status": "done",
+  "verdict": "violation",
+  "violations": [
+    {
+      "type": "Пересчёт после ухода клиента",
+      "timecode_sec": 12.4,
+      "start_sec": 10.0,
+      "end_sec": 15.0,
+      "description": "Пример схемы: клиент покидает зону, после чего начинается пересчёт. Основание для проверки: постановление НБРК № 231, пункт 20. https://adilet.zan.kz/rus/docs/V1900019680. Требуется исключить повторный внутренний пересчёт.",
+      "evidence_frames": [
+        {
+          "timestamp_sec": 12.4,
+          "image_base64": "<actual JPEG base64 is generated from the uploaded video>"
+        }
+      ],
+      "rule": {
+        "id": "R02",
+        "title": "Пересчёт после ухода клиента",
+        "document": "Постановление Правления НБРК от 29.11.2019 № 231",
+        "section": "пункт 20",
+        "url": "https://adilet.zan.kz/rus/docs/V1900019680",
+        "applicability": "Обычный приём денег от клиента.",
+        "limitation": "Исключить повторный внутренний пересчёт.",
+        "verification_status": "Актуальность редакции требует проверки."
+      },
+      "confidence": 0.85,
+      "alternative_explanation": "Повторный внутренний пересчёт.",
+      "missing_data": ["Подтверждение типа операции"]
+    }
+  ],
+  "stage": "completed",
+  "progress": 100,
+  "mode": "plugin",
+  "created_at": "2026-10-17T10:00:00+00:00",
+  "updated_at": "2026-10-17T10:00:10+00:00",
+  "duration_sec": 30.0,
+  "limitations": ["Пример формата; не результат реального анализа."]
+}

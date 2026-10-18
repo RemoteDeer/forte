@@ -1,0 +1,810 @@
+{
+  "date": "2026-10-18",
+  "selection": "20 shortest MOV files in the supplied local videos directory; not a random or labeled sample",
+  "metadata": {
+    "sha256": "d4179f8b69e6b1af4a6019fcf8d0b09cb062f0d25e38a0cd0947f874c26bd1ca",
+    "classes": {
+      "0": "person",
+      "1": "cash",
+      "2": "document",
+      "3": "passport",
+      "4": "collection_bag",
+      "5": "handbag",
+      "6": "coat",
+      "7": "phone",
+      "8": "cup",
+      "9": "safe_closed",
+      "10": "safe_open",
+      "11": "door_closed",
+      "12": "door_open",
+      "13": "laptop_active",
+      "14": "laptop_dimmed",
+      "15": "laptop_locked",
+      "16": "laptop_off",
+      "17": "counter_machine"
+    },
+    "task": "detect",
+    "torch": "2.9.1+cpu",
+    "checkpoint_metrics": {
+      "metrics/precision(B)": 0.95438,
+      "metrics/recall(B)": 0.84969,
+      "metrics/mAP50(B)": 0.91028,
+      "metrics/mAP50-95(B)": 0.78326,
+      "val/box_loss": 0.50455,
+      "val/cls_loss": 0.27811,
+      "val/dfl_loss": 0.85668,
+      "fitness": 0.78326
+    },
+    "checkpoint_date": "2026-10-17T23:46:39.495488+00:00",
+    "checkpoint_version": "8.4.181"
+  },
+  "settings": {
+    "fps": 3,
+    "conf": 0.35,
+    "imgsz": 864,
+    "device": "cpu",
+    "cash_conf": 0.4
+  },
+  "results": [
+    {
+      "video": "Х-20.mov",
+      "duration_sec": 11.633333333333333,
+      "elapsed_sec": 16.05,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 35,
+      "object_counts": {
+        "person": 41,
+        "cash": 12,
+        "laptop_active": 17
+      },
+      "signal_counts": {
+        "at_desk": 35,
+        "cash_free": 6,
+        "others": 0,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 0,
+      "used_fallback_area": false,
+      "work_area": [
+        45.1,
+        254.7,
+        260.7,
+        535.0
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-33.mov",
+      "duration_sec": 14.333333333333334,
+      "elapsed_sec": 18.95,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 43,
+      "object_counts": {
+        "person": 48,
+        "cash": 1,
+        "collection_bag": 1,
+        "document": 11
+      },
+      "signal_counts": {
+        "at_desk": 31,
+        "cash_free": 0,
+        "others": 0,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 4,
+      "used_fallback_area": true,
+      "work_area": [
+        69.6,
+        254.4,
+        394.4,
+        678.4
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-24.mov",
+      "duration_sec": 14.7,
+      "elapsed_sec": 23.05,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 45,
+      "object_counts": {
+        "person": 53,
+        "document": 44,
+        "laptop_active": 16,
+        "cash": 14,
+        "passport": 1,
+        "collection_bag": 12
+      },
+      "signal_counts": {
+        "at_desk": 40,
+        "cash_free": 3,
+        "others": 0,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 5,
+      "used_fallback_area": false,
+      "work_area": [
+        66.5,
+        275.0,
+        274.0,
+        554.5
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-17.mov",
+      "duration_sec": 14.733333333333333,
+      "elapsed_sec": 18.99,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 45,
+      "object_counts": {
+        "person": 89,
+        "cash": 3,
+        "collection_bag": 3,
+        "document": 1
+      },
+      "signal_counts": {
+        "at_desk": 45,
+        "cash_free": 0,
+        "others": 14,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 0,
+      "used_fallback_area": true,
+      "work_area": [
+        69.6,
+        254.4,
+        394.4,
+        678.4
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-10.mov",
+      "duration_sec": 15.566666666666666,
+      "elapsed_sec": 20.83,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 47,
+      "object_counts": {
+        "person": 48,
+        "cash": 49,
+        "laptop_active": 23,
+        "coat": 5
+      },
+      "signal_counts": {
+        "at_desk": 46,
+        "cash_free": 15,
+        "others": 0,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 1,
+      "used_fallback_area": false,
+      "work_area": [
+        0,
+        257.7,
+        204.3,
+        542.3
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-37.mov",
+      "duration_sec": 15.866666666666667,
+      "elapsed_sec": 21.24,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 48,
+      "object_counts": {
+        "person": 120,
+        "laptop_off": 35,
+        "cash": 24,
+        "counter_machine": 35,
+        "collection_bag": 2,
+        "door_open": 2,
+        "laptop_active": 1,
+        "cup": 7,
+        "document": 5
+      },
+      "signal_counts": {
+        "at_desk": 48,
+        "cash_free": 4,
+        "others": 13,
+        "safe_open": 0,
+        "door_open": 2
+      },
+      "longest_absent_samples": 0,
+      "used_fallback_area": false,
+      "work_area": [
+        0,
+        260.0,
+        464,
+        518.6
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-28.mov",
+      "duration_sec": 16.533333333333335,
+      "elapsed_sec": 21.49,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 50,
+      "object_counts": {
+        "person": 71,
+        "laptop_active": 12,
+        "document": 5,
+        "cash": 6,
+        "door_open": 2
+      },
+      "signal_counts": {
+        "at_desk": 46,
+        "cash_free": 0,
+        "others": 1,
+        "safe_open": 0,
+        "door_open": 2
+      },
+      "longest_absent_samples": 3,
+      "used_fallback_area": false,
+      "work_area": [
+        65.7,
+        265.5,
+        276.4,
+        568.0
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "X-2.mov",
+      "duration_sec": 17.066666666666666,
+      "elapsed_sec": 22.13,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 52,
+      "object_counts": {
+        "person": 119,
+        "cash": 65,
+        "collection_bag": 8,
+        "door_open": 1,
+        "document": 15
+      },
+      "signal_counts": {
+        "at_desk": 52,
+        "cash_free": 1,
+        "others": 23,
+        "safe_open": 0,
+        "door_open": 1
+      },
+      "longest_absent_samples": 0,
+      "used_fallback_area": true,
+      "work_area": [
+        69.6,
+        254.4,
+        394.4,
+        678.4
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-29.mov",
+      "duration_sec": 17.3,
+      "elapsed_sec": 22.04,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 52,
+      "object_counts": {
+        "person": 60,
+        "laptop_active": 14,
+        "document": 16,
+        "coat": 1,
+        "cash": 8
+      },
+      "signal_counts": {
+        "at_desk": 47,
+        "cash_free": 0,
+        "others": 0,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 2,
+      "used_fallback_area": false,
+      "work_area": [
+        69.0,
+        264.2,
+        276.0,
+        568.1
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-34.mov",
+      "duration_sec": 17.733333333333334,
+      "elapsed_sec": 23.21,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 54,
+      "object_counts": {
+        "laptop_off": 43,
+        "cash": 27,
+        "person": 94,
+        "collection_bag": 10,
+        "door_open": 4,
+        "phone": 1,
+        "document": 4
+      },
+      "signal_counts": {
+        "at_desk": 52,
+        "cash_free": 8,
+        "others": 1,
+        "safe_open": 0,
+        "door_open": 4
+      },
+      "longest_absent_samples": 2,
+      "used_fallback_area": false,
+      "work_area": [
+        0,
+        242.3,
+        216.3,
+        554.2
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-23.mov",
+      "duration_sec": 18.266666666666666,
+      "elapsed_sec": 23.55,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 55,
+      "object_counts": {
+        "person": 54,
+        "laptop_active": 6,
+        "laptop_locked": 1,
+        "cash": 1
+      },
+      "signal_counts": {
+        "at_desk": 50,
+        "cash_free": 0,
+        "others": 0,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 3,
+      "used_fallback_area": false,
+      "work_area": [
+        0,
+        266.2,
+        418.3,
+        526.4
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-30.mov",
+      "duration_sec": 18.8,
+      "elapsed_sec": 23.43,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 57,
+      "object_counts": {
+        "person": 74,
+        "document": 2,
+        "cash": 8,
+        "door_open": 1,
+        "collection_bag": 1
+      },
+      "signal_counts": {
+        "at_desk": 49,
+        "cash_free": 2,
+        "others": 2,
+        "safe_open": 0,
+        "door_open": 1
+      },
+      "longest_absent_samples": 7,
+      "used_fallback_area": true,
+      "work_area": [
+        69.6,
+        254.4,
+        394.4,
+        678.4
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-46.mov",
+      "duration_sec": 19.133333333333333,
+      "elapsed_sec": 23.36,
+      "verdict": "violation",
+      "violations": [
+        {
+          "type": "ML02: Наличные на рабочем месте без присмотра кассира",
+          "kind": "cash_unattended",
+          "timecode_sec": 1.33,
+          "end_sec": 5.0,
+          "rule": "Правила НБРК № 231, п. 20"
+        },
+        {
+          "type": "ML02: Наличные на рабочем месте без присмотра кассира",
+          "kind": "cash_unattended",
+          "timecode_sec": 8.0,
+          "end_sec": 11.33,
+          "rule": "Правила НБРК № 231, п. 20"
+        },
+        {
+          "type": "ML02: Наличные на рабочем месте без присмотра кассира",
+          "kind": "cash_unattended",
+          "timecode_sec": 13.67,
+          "end_sec": 17.33,
+          "rule": "Правила НБРК № 231, п. 20"
+        }
+      ],
+      "original_identical": true,
+      "converted_count": 3,
+      "frame_count": 58,
+      "object_counts": {
+        "person": 20,
+        "cash": 94,
+        "document": 8
+      },
+      "signal_counts": {
+        "at_desk": 19,
+        "cash_free": 48,
+        "others": 0,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 11,
+      "used_fallback_area": true,
+      "work_area": [
+        69.6,
+        254.4,
+        394.4,
+        678.4
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-21.mov",
+      "duration_sec": 19.6,
+      "elapsed_sec": 23.7,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 59,
+      "object_counts": {
+        "person": 66,
+        "cash": 29,
+        "laptop_active": 46,
+        "coat": 1,
+        "document": 7
+      },
+      "signal_counts": {
+        "at_desk": 59,
+        "cash_free": 0,
+        "others": 0,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 0,
+      "used_fallback_area": false,
+      "work_area": [
+        45.4,
+        260.8,
+        260.7,
+        529.8
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-26.mov",
+      "duration_sec": 19.8,
+      "elapsed_sec": 24.14,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 60,
+      "object_counts": {
+        "person": 81,
+        "laptop_active": 29,
+        "cash": 28,
+        "document": 4
+      },
+      "signal_counts": {
+        "at_desk": 55,
+        "cash_free": 13,
+        "others": 0,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 5,
+      "used_fallback_area": false,
+      "work_area": [
+        65.6,
+        276.6,
+        275.1,
+        557.4
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-3.mov",
+      "duration_sec": 20.033333333333335,
+      "elapsed_sec": 25.66,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 61,
+      "object_counts": {
+        "person": 150,
+        "cash": 118,
+        "collection_bag": 2,
+        "document": 20
+      },
+      "signal_counts": {
+        "at_desk": 61,
+        "cash_free": 6,
+        "others": 27,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 0,
+      "used_fallback_area": true,
+      "work_area": [
+        69.6,
+        254.4,
+        394.4,
+        678.4
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-44.mov",
+      "duration_sec": 20.433333333333334,
+      "elapsed_sec": 25.87,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 62,
+      "object_counts": {
+        "cash": 70,
+        "person": 44,
+        "document": 1
+      },
+      "signal_counts": {
+        "at_desk": 44,
+        "cash_free": 44,
+        "others": 0,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 6,
+      "used_fallback_area": true,
+      "work_area": [
+        69.6,
+        254.4,
+        394.4,
+        678.4
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-15.mov",
+      "duration_sec": 20.866666666666667,
+      "elapsed_sec": 26.14,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 63,
+      "object_counts": {
+        "cash": 21,
+        "person": 74,
+        "laptop_active": 14,
+        "collection_bag": 8,
+        "coat": 6,
+        "door_open": 3
+      },
+      "signal_counts": {
+        "at_desk": 58,
+        "cash_free": 0,
+        "others": 0,
+        "safe_open": 0,
+        "door_open": 3
+      },
+      "longest_absent_samples": 3,
+      "used_fallback_area": false,
+      "work_area": [
+        13.5,
+        257.4,
+        221.5,
+        532.4
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-22.mov",
+      "duration_sec": 21.03333333333333,
+      "elapsed_sec": 26.65,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 64,
+      "object_counts": {
+        "laptop_active": 17,
+        "person": 52,
+        "cash": 1
+      },
+      "signal_counts": {
+        "at_desk": 48,
+        "cash_free": 1,
+        "others": 2,
+        "safe_open": 0,
+        "door_open": 0
+      },
+      "longest_absent_samples": 6,
+      "used_fallback_area": false,
+      "work_area": [
+        48.7,
+        262.1,
+        254.6,
+        530.5
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    },
+    {
+      "video": "Х-32.mov",
+      "duration_sec": 21.3,
+      "elapsed_sec": 186.13,
+      "verdict": "no_violation",
+      "violations": [],
+      "original_identical": true,
+      "converted_count": 0,
+      "frame_count": 64,
+      "object_counts": {
+        "person": 69,
+        "door_open": 2,
+        "document": 1,
+        "cash": 1
+      },
+      "signal_counts": {
+        "at_desk": 52,
+        "cash_free": 0,
+        "others": 1,
+        "safe_open": 0,
+        "door_open": 2
+      },
+      "longest_absent_samples": 10,
+      "used_fallback_area": true,
+      "work_area": [
+        69.6,
+        254.4,
+        394.4,
+        678.4
+      ],
+      "width": 464,
+      "height": 848,
+      "rotation": null,
+      "first_timestamp": 0.0
+    }
+  ],
+  "api_positive_check": {
+    "video": "Х-46.mov",
+    "job_id": "3f64b24f69b0440fa8fd793bb4276d08",
+    "mode": "plugin",
+    "verdict": "violation",
+    "ranges": [
+      [
+        1.33,
+        5.0
+      ],
+      [
+        8.0,
+        11.33
+      ],
+      [
+        13.67,
+        17.33
+      ]
+    ],
+    "jpeg_count": 6,
+    "upload_bytes_identical": true,
+    "sqlite_matches": true,
+    "elapsed_sec": 82.13
+  },
+  "independent_original_positive_identical": true
+}

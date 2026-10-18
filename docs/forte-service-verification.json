@@ -1,0 +1,179 @@
+{
+  "package": "forte_service.zip",
+  "weights": {
+    "forte_det.pt": "1aa719c22ffa1e436bed79d47fae196627a7f6e6a109abb583b3d75e38bbec64",
+    "forte_safe.pt": "73df26afeb265cbf086bbbb3debafdc8a328780a82e02cdef76755a66d1a26ab",
+    "forte_door.pt": "55e484762847ebf5d5317acc9546b00d3a2f7c208156cd415c9a47b3fd5ce420"
+  },
+  "models": {
+    "det": {
+      "task": "detect",
+      "classes": {
+        "0": "person",
+        "1": "cash",
+        "2": "document",
+        "3": "passport",
+        "4": "phone",
+        "5": "cup",
+        "6": "handbag",
+        "7": "collection_bag",
+        "8": "coat",
+        "9": "laptop_active",
+        "10": "laptop_dimmed",
+        "11": "laptop_locked",
+        "12": "laptop_off",
+        "13": "counter_machine",
+        "14": "safe",
+        "15": "door_closed",
+        "16": "door_open"
+      }
+    },
+    "door": {
+      "task": "classify",
+      "classes": {
+        "0": "closed",
+        "1": "open"
+      }
+    },
+    "safe": {
+      "task": "classify",
+      "classes": {
+        "0": "closed",
+        "1": "open"
+      }
+    }
+  },
+  "direct_checks": [
+    {
+      "video": "Х-46.mov",
+      "verdict": "no_violation",
+      "events": [],
+      "elapsed_sec": 22.93
+    },
+    {
+      "video": "Х-37.mov",
+      "verdict": "no_violation",
+      "events": [],
+      "elapsed_sec": 19.08
+    },
+    {
+      "video": "Х-44.mov",
+      "verdict": "no_violation",
+      "events": [],
+      "elapsed_sec": 21.44
+    },
+    {
+      "video": "Х-32.mov",
+      "verdict": "violation",
+      "events": [
+        [
+          "ML05",
+          "Дверь кассового помещения оставлена открытой",
+          3.0
+        ]
+      ],
+      "elapsed_sec": 22.88
+    },
+    {
+      "video": "Х-24.mov",
+      "verdict": "no_violation",
+      "events": [],
+      "elapsed_sec": 16.39
+    },
+    {
+      "video": "Х-34.mov",
+      "verdict": "no_violation",
+      "events": [],
+      "elapsed_sec": 19.53
+    }
+  ],
+  "long_video": {
+    "video": "Х-14.mov",
+    "duration_sec": 142.53333333333333,
+    "elapsed_sec": 151.89,
+    "events": [
+      [
+        "ML07",
+        43.5
+      ]
+    ]
+  },
+  "api_checks": [
+    {
+      "video": "Х-32.mov",
+      "job_id": "6dfef51afb8243e091152bf8c43499e8",
+      "verdict": "violation",
+      "events": [
+        [
+          "ML05",
+          "Дверь кассового помещения оставлена открытой",
+          3.0
+        ]
+      ],
+      "jpeg_count": 2,
+      "progress": [
+        0,
+        5,
+        20,
+        22,
+        25,
+        28,
+        31,
+        32,
+        35,
+        38,
+        41,
+        43,
+        46,
+        49,
+        52,
+        53,
+        56,
+        59,
+        62,
+        65,
+        67,
+        70,
+        73,
+        74,
+        77,
+        100
+      ],
+      "elapsed_sec": 31.29
+    },
+    {
+      "video": "Х-46.mov",
+      "job_id": "23c9cb860bac4b35bef6dbdfd8667af4",
+      "verdict": "no_violation",
+      "events": [],
+      "jpeg_count": 0,
+      "progress": [
+        5,
+        20,
+        23,
+        26,
+        29,
+        30,
+        34,
+        37,
+        40,
+        41,
+        45,
+        48,
+        51,
+        52,
+        56,
+        59,
+        62,
+        63,
+        67,
+        70,
+        73,
+        74,
+        78,
+        100
+      ],
+      "elapsed_sec": 26.23
+    }
+  ]
+}
